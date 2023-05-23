@@ -1,0 +1,512 @@
+.main {
+    text-align: center;
+    display: inline;
+}
+
+.content {
+	position:static;
+}
+
+.content h1 {
+    width: max-content;
+	color: #fff;
+	font-size: 8em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.content h1:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h1:nth-child(2) {
+	color: #03a9f4;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+
+header {
+    height: 100px;
+    width: 75vw;
+    padding-left: 650px;
+}
+
+.tagline {
+    padding: 7% 0% 0% 0%;
+    height:100px;
+    font-size: 350%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.overview {
+    margin: 5px 10px;
+    padding: 5px 5px;
+    flex-grow: 1;
+    display: flex;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name {
+    flex-grow: 1;
+
+}
+
+.name p {
+    margin: 20px 35px;
+    font-size: larger;
+}
+
+.name h2 {
+    margin: 5px 25px;
+
+}
+
+.family {
+    flex-grow: 1;
+}
+
+.family p {
+    margin: 20px 35px;
+    font-size: larger;
+}
+
+.family h2 {
+    margin: 5px 25px;
+
+}
+
+.intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    margin: 15px 15px;
+    width: 1000px;
+    text-align: left;
+
+}
+
+
+.logo{
+    width: 270px;
+    height: 450px;
+    margin: 5px 20px;
+}
+
+.p1 {
+    display: flex;
+
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.p2 {
+    display: flex;
+}
+
+
+.movies {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.movies h2 {
+    margin: 5px 40px;
+}
+
+.movies li {
+    margin: 20px 35px;
+    font-size: larger;
+}
+
+.quotes {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    width: 1000px;
+}
+
+.quotes h2 {
+    margin: 5px 40px;
+}
+
+.quotes li {
+    margin: 20px 35px;
+    font-size: 23px;
+}
+
+
+
+@media (max-width: 360px) {
+    .content {
+        position:static;
+    }
+    
+    .content h1 {
+        width: max-content;
+        color: #fff;
+        font-size: 8em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    
+    .content h1:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #03a9f4;
+    }
+    
+    .content h1:nth-child(2) {
+        color: #03a9f4;
+        animation: animate 4s ease-in-out infinite;
+    }
+    
+    @keyframes animate {
+        0%,
+        100% {
+            clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+            );
+        }
+    
+        50% {
+            clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+            );
+        }
+    }
+    
+    
+    header {
+        height: 100px;
+        width: 75vw;
+        padding-left: 670px;
+    }
+    
+    .tagline {
+        padding: 30% 0% 0% 0%;
+        height:100px;
+        font-size: 350%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .p1 {
+        display: block;
+        width: 250%;
+
+    }
+
+    .overview {
+        width: 1000px;
+        margin: 1% 2%;
+        padding: 0% 1%;
+        display: inline;
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .name {
+
+        width: 150%;
+    }
+
+    .name p {
+        margin: 3% 5%;
+        font-size: 345%;
+        width: max-content;
+    }
+
+    .name h2 {
+        font-size: 500%;
+        margin: 0% 2%;
+
+    }
+
+    .family {
+        width: 150%;
+    }
+
+    .family p {
+        margin: 3% 5%;
+        font-size: 345%;
+    }
+
+    .family h2 {
+        margin: 0% 2%;
+        font-size: 500%;
+    }
+
+    .logo{
+        margin: 5% 0% 5% 3%;
+        width: 150%;
+        height: 100%;
+    }
+
+    .intro {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 500%;
+        margin: 20% 5% 0% 5%;
+        width: 400%;
+        text-align: left;
+        line-height: 150%
+    }
+
+    .p2 {
+        display: block;
+    }
+
+    .quotes {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: left;
+        width: 400%;
+    }
+
+    .quotes h2 {
+        margin: 5% 2%;
+        font-size: 500%;
+    }
+
+    .quotes li {
+        font-style: italic;
+        margin: 5% 5%;
+        font-size: 400%;
+    }
+
+    .movies {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+        width: 400%
+    }
+
+    .movies h2 {
+        margin: 5% 2%;
+        font-size: 500%;
+    }
+
+    .movies li {
+        margin: 3% 5%;
+        font-size: 400%;
+    }
+
+
+}
+
+
+@media (max-width: 712px) {
+    .content {
+        position:static;
+    }
+    
+    .content h1 {
+        width: max-content;
+        color: #fff;
+        font-size: 8em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+    
+    .content h1:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #03a9f4;
+    }
+    
+    .content h1:nth-child(2) {
+        color: #03a9f4;
+        animation: animate 4s ease-in-out infinite;
+    }
+    
+    @keyframes animate {
+        0%,
+        100% {
+            clip-path: polygon(
+                0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%
+            );
+        }
+    
+        50% {
+            clip-path: polygon(
+                0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%
+            );
+        }
+    }
+    
+    
+    header {
+        height: 100px;
+        width: 75vw;
+        padding-left: 695px;
+    }
+    
+    .tagline {
+        padding: 30% 0% 0% 0%;
+        height:100px;
+        font-size: 350%;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .p1 {
+        display: block;
+        width: 250%;
+
+    }
+
+    .overview {
+        width: 1000px;
+        margin: 1% 2%;
+        padding: 0% 1%;
+        display: inline;
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .name {
+
+        width: 150%;
+    }
+
+    .name p {
+        margin: 3% 5%;
+        font-size: 345%;
+        width: max-content;
+    }
+
+    .name h2 {
+        font-size: 500%;
+        margin: 0% 2%;
+
+    }
+
+    .family {
+        width: 150%;
+    }
+
+    .family p {
+        margin: 3% 5%;
+        font-size: 345%;
+    }
+
+    .family h2 {
+        margin: 0% 2%;
+        font-size: 500%;
+    }
+
+    .logo{
+        margin: 5% 0% 5% 3%;
+        width: 150%;
+        height: 100%;
+    }
+
+    .intro {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 500%;
+        margin: 20% 5% 0% 5%;
+        width: 400%;
+        text-align: left;
+        line-height: 150%
+    }
+
+    .p2 {
+        display: block;
+    }
+
+    .quotes {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: left;
+        width: 400%;
+    }
+
+    .quotes h2 {
+        margin: 5% 2%;
+        font-size: 500%;
+    }
+
+    .quotes li {
+        font-style: italic;
+        margin: 5% 5%;
+        font-size: 400%;
+    }
+
+    .movies {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: left;
+        width: 400%
+    }
+
+    .movies h2 {
+        margin: 5% 2%;
+        font-size: 500%;
+    }
+
+    .movies li {
+        margin: 3% 5%;
+        font-size: 400%;
+    }
+
+
+}
